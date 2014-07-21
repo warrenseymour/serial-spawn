@@ -17,5 +17,13 @@
   },
   "dependencies": {
     "serialport": "~1.4.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/warrenseymour/serial-spawn.git"
+  },
+  "bugs": {
+    "url": "https://github.com/warrenseymour/serial-spawn/issues"
+  },
+  "homepage": "https://github.com/warrenseymour/serial-spawn"
 }
