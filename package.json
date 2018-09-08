@@ -1,6 +1,6 @@
 {
   "name": "serial-spawn",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Spawn processes on serial port events",
   "main": "serial-spawn.js",
   "scripts": {
