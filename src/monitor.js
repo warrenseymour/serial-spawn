@@ -1,5 +1,6 @@
 var serialport = require('serialport'),
-	exec = require('child_process').exec;
+		exec = require('child_process').exec,
+		parser = require('./parser');
 
 module.exports = function(config) {
 	var self = this;
@@ -7,7 +8,7 @@ module.exports = function(config) {
 	var ports = config.ports.map(function(port) {
 		var instance = new serialport.SerialPort(port.port, {
 			baudrate: 1200,
-			parser: serialport.parsers.readline("\n")
+			parser: parser()
 		});
 
 		instance.on('data', function(data) {
