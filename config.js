@@ -26,7 +26,7 @@ var config = {
 	 * return value is falsy, no command will be invoked.
 	 */
 	spawn: function(port, data) {
-		return 'echo ' + port.name + ": " + data;
+		return 'echo ' + port.name + ": " + data.toString();
 	}
 };
 
