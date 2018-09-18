@@ -1,8 +1,11 @@
 var config = {
 
 	/**
-	 * Configure devices here. By default, a single device is connected to
-	 * port 'COM1' and named 'line1'.
+	 * Configure devices here. By default, a single device is connected to port
+	 * 'COM1' and named 'line1' that uses the default parser. It is possible to
+	 * change the parser function by adding a `parser` property that refers to a
+	 * built-in or custom parsing function. For example, to use the `latch`
+	 * parser, use `parser: require('serial-spawn/src/parser').latch`.
 	 *
 	 * Rename or add more lines by modifying the 'ports' property.
 	 */
