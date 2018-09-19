@@ -8,7 +8,7 @@ module.exports = function(config) {
 	var ports = config.ports.map(function(port) {
 		var instance = new serialport.SerialPort(port.port, {
 			baudrate: 1200,
-			parser: config.parser || parser.readline()
+			parser: port.parser || parser.readline()
 		});
 
 		instance.on('data', function(data) {
